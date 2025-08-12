@@ -97,7 +97,7 @@ Each model undergoes hyperparameter tuning using GridSearchCV to find optimal pa
 
 ## Technologies Used
 
-- **Python 3.x**
+- **Python 3.8**
 - **Scikit-learn**: Machine learning algorithms and preprocessing
 - **XGBoost & CatBoost**: Advanced boosting algorithms
 - **Flask**: Web application framework
