@@ -15,21 +15,37 @@ A comprehensive machine learning project that predicts student math scores using
 
 ## Project Structure
 
+```
 student_performance/
-├── artifacts/ # Stored models and preprocessors
+├── artifacts/                    # Stored models and preprocessors
+│   ├── model.pkl                # Trained ML model
+│   ├── preprocessor.pkl         # Data preprocessing pipeline
+│   ├── train.csv               # Training dataset
+│   ├── test.csv                # Testing dataset
+│   └── data.csv                # Raw dataset
+├── notebook/
+│   └── data/
+│       └── stud.csv            # Original dataset
 ├── src/
-│ ├── components/ # Core ML components
-│ │ ├── data_ingestion.py
-│ │ ├── data_transformation.py
-│ │ └── model_trainer.py
-│ ├── pipeline/ # Prediction pipeline
-│ │ └── predict_pipeline.py
-│ ├── exception.py # Custom exception handling
-│ ├── logger.py # Logging configuration
-│ └── utils.py # Utility functions
-├── templates/ # HTML templates for web app
-├── app.py # Flask application
-└── requirements.txt # Dependencies
+│   ├── components/             # Core ML pipeline components
+│   │   ├── __init__.py
+│   │   ├── data_ingestion.py   # Data loading and splitting
+│   │   ├── data_transformation.py  # Data preprocessing
+│   │   └── model_trainer.py    # Model training and selection
+│   ├── pipeline/               # Prediction pipeline
+│   │   ├── __init__.py
+│   │   └── predict_pipeline.py # Inference pipeline
+│   ├── __init__.py
+│   ├── exception.py            # Custom exception handling
+│   ├── logger.py              # Logging configuration
+│   └── utils.py               # Utility functions
+├── templates/                  # HTML templates for web app
+│   ├── index.html             # Homepage template
+│   └── home.html              # Prediction form template
+├── app.py                     # Flask web application
+├── requirements.txt           # Project dependencies
+└── README.md                  # Project documentation
+```
 
 ## Machine Learning Pipeline
 
